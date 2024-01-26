@@ -3,7 +3,6 @@ import { Metadata } from 'next'
 
 import { api } from '@/data/api'
 import { Product } from '@/data/types/product'
-import { env } from '@/env'
 import { AddToCartButton } from '@/components/add-to-cart-button'
 
 interface ProductProps {
@@ -31,7 +30,6 @@ export async function generateMetadata({
 
   return {
     title: product.title,
-    metadataBase: new URL(env.APP_URL),
   }
 }
 
