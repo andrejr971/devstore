@@ -31,7 +31,7 @@ export async function generateMetadata({
 
   return {
     title: product.title,
-    metadataBase: new URL(env.NEXT_PUBLIC_API_BASE_URL),
+    metadataBase: new URL(env.APP_URL),
   }
 }
 
